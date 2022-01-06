@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato&family=Pacifico&family=Poppins@1&family=Source+Sans+Pro&display=swap");
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+font-family: Poppins, sans-serif;
+color: #000;
+font-weight:500;
+}
