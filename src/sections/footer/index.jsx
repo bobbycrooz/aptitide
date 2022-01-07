@@ -7,18 +7,20 @@ import styled from "styled-components";
 const Index = () => {
   return (
     <Hero className=" h-auto w-full">
-      <div className="app_store w-full flex justify-between items-end relative">
-        <img src={imgs.rec2} alt="" className="w-full" />
-        <div className="content absolute">
-          <h1 className="text-6xl font-bold">Get it on App Store</h1>
-          <div className="flex justify-center mt-8">
+      <div className="app_store w-full flex justify-between items-end relative mt-11 md:mt-2">
+        <img src={imgs.rec2} alt="" className="w-full  invisible lg:visible" />
+        <div className="content absolute ">
+          <h1 className="lg:text-6xl md:text-5xl text-3xl font-bold">
+            Get it on App Store
+          </h1>
+          <div className="flex flex-col md:flex-row space-y-6 md:space-y-1 justify-center mt-8">
             <img src={imgs.gplay} alt="" />
             <img src={imgs.apple} alt="" />
           </div>
         </div>
       </div>
       <footer className="py-9 w-full h-auto">
-        <div className="flex justify-between ">
+        <div className="flex justify-between  ">
           <div className="logo-box-section text-white ml-11">
             {/**/}
             <div className="nav_logo ">
@@ -47,7 +49,7 @@ const Index = () => {
           </div>
           {/**/}
           {/**/}
-          <div className="f-nav  flex w-1/2 justify-around">
+          <div className="f-nav  flex  w-1/2 justify-around">
             <div className="comapany text-white text-left">
               <h1 className="font-bold">COMPANY</h1>
               <ul className="capitalize mt-2">

@@ -151,12 +151,12 @@ const Ig = () => {
 const Hb = () => {
   return (
     <svg
-      class={dash}
+      class='bg-white p-2 w-16 h-16'
       focusable="false"
       viewBox="0 0 24 24"
       aria-hidden="true"
       data-testid="MenuIcon"
-      fill="#fff"
+      fill="#fa3d3d"
     >
       <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
     </svg>

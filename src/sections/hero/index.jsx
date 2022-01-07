@@ -12,7 +12,7 @@ const Index = () => {
   return (
     <Hero className=" h-auto  bg-white w-full flex flex-col justify-between items-center  py-2">
       <div className="hero-box space-y-6  text-xl">
-        <h1 className="hero-box-auto-type text-6xl font-semibold">
+        <h1 className="hero-box-auto-type lg:text-6xl text-5xl font-semibold">
           <Typewriter
             options={{
               strings: [
@@ -35,14 +35,14 @@ const Index = () => {
           <b>How easy can that be!</b>
         </p>
 
-        <div className="hero-box-btn-cont  mx-auto flex justify-between">
+        <div className="hero-box-btn-cont  mx-auto flex flex-col md:flex-row border md:justify-between space-y-5 md:space-y-0">
           <Button text="dowload now" />
 
           <Button text="explore features" />
         </div>
       </div>
       {/**/}
-      <div className="tri-icon   relative w-full h-48 flex">
+      <div className="tri-icon hidden   relative w-full h-48 xl:flex">
         <div className="tri-icon-v absolute">
           <Video />
         </div>
@@ -68,20 +68,20 @@ const Index = () => {
         </div>
       </div>
       {/**/}
-      <section className="section2 w-full flex h-auto  p-11 justify-center items-center relative">
-        <img src={imgs.dottedD} alt="" className=" dottedD" />
+      <section className="section2  w-full flex flex-col md:flex-row h-auto  p-11 justify-center items-start lg:items-center relative">
+        <img src={imgs.dottedD} alt="" className="hidden xl:block dottedD" />
         <img src={imgs.phoneA} alt="" className="w-1/3  phonea mx-16" />
 
-        <div className="list-details  w-full ">
-          <div className="my-20 card-one  p-2 space-y-4">
-            <span className="icon">
+        <div className="list-details  w-full text-center  md:text-left">
+          <div className="my-14 lg:my-20 card-one w-11/12  p-2 space-y-4 flex flex-col items-center md:block">
+            <span className="icon ">
               <Dash />
             </span>
-            <h1 className="font-semibold text-2xl text-left">
+            <h1 className="font-semibold text-2xl ">
               Thousands of specialists at your disposal
             </h1>
 
-            <p className="text-left font-meddium text-xl">
+            <p className="font-meddium text-xl">
               At Medoncall, we ensure that the best of practitioners attend to
               your request providing the highest quality of medical services for
               a quick and seamless recovery.
@@ -89,15 +89,18 @@ const Index = () => {
           </div>
           {/**/}
 
-          <div className="my-20 card-one  p-2 space-y-4">
+          <div
+            className="w-11/12 
+flex flex-col items-center md:block my-14 lg:my-20 card-one  p-2 space-y-4"
+          >
             <span className="icon">
               <Bell />
             </span>
-            <h1 className="font-semibold text-2xl text-left">
+            <h1 className="font-semibold text-2xl ">
               Thousands of specialists at your disposal
             </h1>
 
-            <p className="text-left font-meddium text-xl">
+            <p className=" font-meddium text-xl">
               At Medoncall, we ensure that the best of practitioners attend to
               your request providing the highest quality of medical services for
               a quick and seamless recovery.
@@ -105,15 +108,19 @@ const Index = () => {
           </div>
           {/**/}
 
-          <div className="my-20 card-one  p-2 space-y-4">
+          <div
+            className="w-11/12 
+flex flex-col items-center md:block my-14 lg:my-20 card-one  p-2 space-y-4"
+          >
             <span className="icon">
               <Map />
             </span>
-            <h1 className="font-semibold text-2xl text-left">
+
+            <h1 className="font-semibold text-2xl ">
               Thousands of specialists at your disposal
             </h1>
 
-            <p className="text-left font-meddium text-xl">
+            <p className=" font-meddium text-xl">
               At Medoncall, we ensure that the best of practitioners attend to
               your request providing the highest quality of medical services for
               a quick and seamless recovery.
@@ -125,8 +132,6 @@ const Index = () => {
   );
 };
 
-
-
 const Hero = styled.button`
   margin-top: 140px;
   transition: 0.5s;
@@ -136,6 +141,9 @@ const Hero = styled.button`
 
     &-btn-cont {
       width: 450px;
+      @media screen and (max-width: 780px) {
+        width: 250px;
+      }
     }
   }
 
@@ -153,7 +161,7 @@ const Hero = styled.button`
 
     &-c {
       right: 45%;
-      bottom: -60px;
+      bottom: -0px;
     }
 
     &-line1 {
@@ -185,17 +193,30 @@ const Hero = styled.button`
     margin-top: 500px;
     /* background-image: linear-gradient(radial, #000, #fff); */
     /* background:#0005; */
+    border: 1px solid #fa3d3d;
 
-    .dottedD{
-    
-    margin-top:200px;
-    
-    } .phonea {
+    .dottedD {
+      margin-top: 200px;
+    }
+    .phonea {
       width: 400px;
     }
     .list-details {
       width: 530px;
       margin-top: -400px;
+    }
+    @media screen and (max-width: 1037px) {
+      margin-top: 100px;
+      padding: 1.75rem;
+
+      .phonea {
+        width: 350px;
+      }
+      .list-details {
+        width: 100%;
+        margin-top: auto;
+        border: 1px solid #fa3d3d;
+      }
     }
   }
 

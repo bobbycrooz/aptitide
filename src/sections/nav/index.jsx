@@ -1,5 +1,6 @@
 import React from "react";
 import imgs from "../../asset/images";
+import { Hb } from "../../asset/icons";
 import { useScroll } from "../../hooks/useScroll";
 import Button from "../../components/button";
 import styled from "styled-components";
@@ -36,9 +37,9 @@ const Index = () => {
   return (
     <Nav
       id="nav"
-      className="active h-auto border bg-white w-full flex justify-between items-center  py-3"
+      className="active h-auto border bg-white w-full flex justify-around md:justify-between items-center  py-3"
     >
-      <div className="nav_logo ml-28   ">
+      <div className="nav_logo lg:ml-28 ml-8 ">
         <h1 className="nav_logo-name font-bold text-pri-1 text-3xl  ">
           MedonCall
         </h1>
@@ -48,7 +49,7 @@ const Index = () => {
           <img src={imgs.elipse} alt="" />
         </div>
       </div>
-      <div className="nav_links  flex space-x-5 mr-28 ">
+      <div className="nav_links hidden md:flex space-x-5 lg:mr-28 mr-8 ">
         <div className="nav_links-item feature  p-4 text-lg capitalize hover:text-gray-600 relative flex">
           feature <img src={imgs.caret} className="ml-2" alt="" />{" "}
           <div className="absolute dropdown invisible bg-white  p-2  border-2 rounded-b-xl">
@@ -62,6 +63,11 @@ const Index = () => {
         <div className="nav_links-item   p-4 text-lg capitalize">contract</div>
         <Button text="get it now" />
       </div>
+      
+      
+      <button className="hamburger md:hidden">
+      <Hb/>
+      </button>
     </Nav>
   );
 };
