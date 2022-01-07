@@ -80,16 +80,16 @@ const Index = () => {
       </div>
 
       {/* section block 4.......*/}
-      <div className="section-fo relative w-full h-auto mt-20 lg:mt-1 border border-red-700   ">
+      <div className="section-fo relative w-full h-auto mt-20 lg:mt-1    ">
         <img src={imgs.trape} alt="" className="w-full hidden lg:block" />
 
-        <div className="text-cont md:text-6xl text-4xl space-y-5 text-center  md:text-right font-semibold lg:absolute  right-20 my-14 lg:my-1 md:mr-11 lg:mr-1 border">
+        <div className="text-cont md:text-6xl text-4xl space-y-5 text-center  md:text-right font-semibold lg:absolute  right-20 my-14 lg:my-1 md:mr-11 lg:mr-1 ">
           <p> Pharmacy?You have it on</p>
           <p>the same app?</p>
           <Button text="read more" />
         </div>
 
-        <div className="three-cards items-center  border md:space-y-1 space-y-20 w-full h-auto lg:absolute bottom-0 py-4 flex flex-col md:flex-row justify-center mt-11  md:mt-40 lg:mt-1">
+        <div className="three-cards items-center   md:space-y-1 space-y-20 w-full h-auto lg:absolute bottom-0 py-4 flex flex-col md:flex-row justify-center mt-11  md:mt-40 lg:mt-1">
           <img src={imgs.arrowCurve} alt="" className="mt-20 hidden md:block" />
           {/**/}
           <div className=" p-6 lg:p-11 flex justify-center items-center  rounded-2xl flex-col bg-white shadow-xl mx-11">

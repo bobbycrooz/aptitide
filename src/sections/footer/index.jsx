@@ -19,9 +19,9 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <footer className="py-9 w-full h-auto">
-        <div className="flex justify-between  ">
-          <div className="logo-box-section text-white ml-11">
+      <footer className="py-9 w-full h-auto  text-sm text-center md:text-left">
+        <div className="flex md:justify-between  justify-around items-center ">
+          <div className="logo-box-section text-white md:ml-11">
             {/**/}
             <div className="nav_logo ">
               <h1 className="nav_logo-name font-bold text-pri-1 text-3xl  ">
@@ -34,7 +34,7 @@ const Index = () => {
               </div>
             </div>
             {/**/}
-            <div className="adress text-left px-6 mt-4">
+            <div className="adress px-6 mt-4">
               <h1>
                 Address: Lorem ipsum dolor sit amet,
                 <br />
@@ -50,7 +50,7 @@ const Index = () => {
           {/**/}
           {/**/}
           <div className="f-nav  flex  w-1/2 justify-around">
-            <div className="comapany text-white text-left">
+            <div className="comapany text-white">
               <h1 className="font-bold">COMPANY</h1>
               <ul className="capitalize mt-2">
                 <li>pricing</li>
@@ -62,7 +62,7 @@ const Index = () => {
             {/**/}
             {/**/}
 
-            <div className="comapany text-white text-left">
+            <div className="comapany text-white hidden md:block">
               <h1 className="font-bold">COMPANY</h1>
               <ul className="capitalize mt-2">
                 <li>drug store</li>
@@ -72,7 +72,7 @@ const Index = () => {
             {/**/}
             {/**/}
 
-            <div className="comapany text-white text-left">
+            <div className="comapany text-white text-left hidden md:block">
               <h1 className="font-bold">HELP</h1>
               <ul className="capitalize mt-2">
                 <li>frequently asked questions</li>
@@ -80,17 +80,41 @@ const Index = () => {
             </div>
           </div>
         </div>
+        {/*__________________*/}
+        <div className="flex justify-around h-auto md:hidden my-6   ">
+          <div className="comapany text-white  p-6">
+            <h1 className="font-bold">COMPANY</h1>
+            <ul className="capitalize mt-2">
+              <li>drug store</li>
+              <li>book consultations</li>
+            </ul>
+          </div>
+          {/**/}
+          {/**/}
 
+          <div className="comapany text-white  p-6 ml-6">
+            <h1 className="font-bold">HELP</h1>
+            <ul className="capitalize mt-2">
+              <li>frequently asked questions</li>
+            </ul>
+          </div>
+        </div>
+        {/*__________________________________*/}
         <div className="last-el w-full flex py-4 justify-around text-white mt-11">
-          <h1>(c)Copy 2021 | All Rights Reserved | Medoncall</h1>
+          <h1 className="hidden md:flex">
+            (c)Copy 2021 | All Rights Reserved | Medoncall
+          </h1>
 
-          <h1>Made with ❤️ by dev_bee Technologies</h1>
+          <h1 className='text-xs'>Made with ❤️ by dev_bee Technologies</h1>
 
-          <div className="icon-box flex  space-x-8">
+          <div className="icon-box flex space-x-8 ">
             <Fb />
             <Tw />
             <Ig />
           </div>
+        </div>
+        <div className="w-full flex justify-center md:hidden text-white text-xs mt-5" >
+          <h1 className="">(c)Copy 2021 | All Rights Reserved | Medoncall</h1>
         </div>
       </footer>
     </Hero>

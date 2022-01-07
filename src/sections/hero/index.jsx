@@ -11,14 +11,14 @@ const Index = () => {
 
   return (
     <Hero className=" h-auto  bg-white w-full flex flex-col justify-between items-center  py-2">
-      <div className="hero-box space-y-6  text-xl">
-        <h1 className="hero-box-auto-type lg:text-6xl text-5xl font-semibold">
+      <div className="hero-box space-y-6 w-full   py-6 h-auto">
+        <h1 className="hero-box-auto-type    lg:text-6xl text-5xl font-semibold">
           <Typewriter
             options={{
               strings: [
-                "All in one App.",
-                "Purchase Prescribed Drugs.",
                 "Consult Healthcare professionals",
+                "Purchase Prescribed Drugs.", 
+                "All in one App.",
               ],
               autoStart: true,
               loop: true,
@@ -26,7 +26,7 @@ const Index = () => {
           />
         </h1>
 
-        <p className="hero-box-content text-center">
+        <p className="hero-box-content text-center  w-full  mx-auto mt-5 md:mt-1 ">
           Get connected with highly experienced medical health care
           <br />
           practitioners at your own time. No waits, no commuting delays.
@@ -35,7 +35,7 @@ const Index = () => {
           <b>How easy can that be!</b>
         </p>
 
-        <div className="hero-box-btn-cont  mx-auto flex flex-col md:flex-row border md:justify-between space-y-5 md:space-y-0">
+        <div className="hero-box-btn-cont  mx-auto flex flex-col md:flex-row  md:justify-between space-y-5 md:space-y-0">
           <Button text="dowload now" />
 
           <Button text="explore features" />
@@ -68,10 +68,11 @@ const Index = () => {
         </div>
       </div>
       {/**/}
-      <section className="section2  w-full flex flex-col md:flex-row h-auto  p-11 justify-center items-start lg:items-center relative">
+      <section className="section2   w-full flex flex-col md:flex-row h-auto  justify-center items-start lg:items-center relative ">
         <img src={imgs.dottedD} alt="" className="hidden xl:block dottedD" />
-        <img src={imgs.phoneA} alt="" className="w-1/3  phonea mx-16" />
-
+      
+          <img src={imgs.phoneA} alt="" className=" w-1/3  phonea mx-16" />
+   
         <div className="list-details  w-full text-center  md:text-left">
           <div className="my-14 lg:my-20 card-one w-11/12  p-2 space-y-4 flex flex-col items-center md:block">
             <span className="icon ">
@@ -138,6 +139,11 @@ const Hero = styled.button`
 
   .hero-box {
     line-height: 30px;
+    /* height: 500px; */
+
+    &-content {
+      width: 95%;
+    }
 
     &-btn-cont {
       width: 450px;
@@ -193,7 +199,6 @@ const Hero = styled.button`
     margin-top: 500px;
     /* background-image: linear-gradient(radial, #000, #fff); */
     /* background:#0005; */
-    border: 1px solid #fa3d3d;
 
     .dottedD {
       margin-top: 200px;
@@ -215,7 +220,6 @@ const Hero = styled.button`
       .list-details {
         width: 100%;
         margin-top: auto;
-        border: 1px solid #fa3d3d;
       }
     }
   }

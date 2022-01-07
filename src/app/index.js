@@ -22,7 +22,6 @@ const LandingPagWrapper = styled.div`
   padding: 0 9%;
   
   .main{
-  border: 1px solid red;
   
   }
 

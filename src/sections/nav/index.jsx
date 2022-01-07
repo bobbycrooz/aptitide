@@ -37,7 +37,7 @@ const Index = () => {
   return (
     <Nav
       id="nav"
-      className="active h-auto border bg-white w-full flex justify-around md:justify-between items-center  py-3"
+      className="active h-auto  bg-white w-full flex  justify-between items-center  py-3"
     >
       <div className="nav_logo lg:ml-28 ml-8 ">
         <h1 className="nav_logo-name font-bold text-pri-1 text-3xl  ">
@@ -65,7 +65,7 @@ const Index = () => {
       </div>
       
       
-      <button className="hamburger md:hidden">
+      <button className="hamburger md:hidden  mr-8">
       <Hb/>
       </button>
     </Nav>
