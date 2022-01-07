@@ -3,18 +3,31 @@ import imgs from "../../asset/images";
 import Button from "../../components/button";
 import styled from "styled-components";
 
-const serviceArr = [1, 1, 1];
+const serviceArr = [
+  {
+    name: "Pick a service",
+    text: "Choose a service to get professsional in specializedfields, whether General checkup, Emergency,Body andNutrition,there is a consultant for it",
+  },
+  {
+    name: "Connect Virtually",
+    text: "Whatever means of communication you prefer-vedio calling,audio calling or texting is adequate. keep it in mind that all information divulged will be treated confidentially",
+  },
+  {
+    name: "Need medications",
+    text: "We provide an online pharmacy where you order precribedthe manufacturer.",
+  },
+];
 
 const Index = () => {
   return (
     <Hero className="font-pop h-auto  mt-20 w-full  py-16 px-4 lg:px-0">
-      <h1 className="font-semibold md:text-6xl text-4xl md:ml-20 text-center md:text-left">
+      <h1 className="font-semibold md:text-6xl sm:text-4xl  text-xl md:ml-20 text-center md:text-left">
         Do more with MedOnCall
       </h1>
       <div className="service-cont  flex flex-col md:flex-row w-full justify-center items-center mt-20">
         <div className="services ">
           {serviceArr.map((item) => (
-            <Service />
+            <Service item={item} />
           ))}
         </div>
         <div className="img-2 p-11 md:p-2 flex justify-center w-full lg:w-1/2 ">
@@ -158,11 +171,13 @@ const Index = () => {
   );
 };
 
-function Service(params) {
+function Service({item}) {
   return (
     <div className="service-card  my-11">
       <div className="service-card-tit flex py-4 mb-4">
-        <h1 className="font-semibold text-3xl  w-auto">Pick a service</h1>
+        <h1 className="font-semibold md:text-3xl text-2xl  w-auto">
+         {item.name}
+        </h1>
 
         <button className="w-14 px-4">
           <img src={imgs.arrow} alt="" className=" " />
@@ -170,9 +185,7 @@ function Service(params) {
       </div>
 
       <p className="service-card-text text-left font-normal text-xl">
-        Choose a service to get professsional in specialized fields, whether
-        General checkup, Emergency,Body and Nutrition,there is a consultant for
-        it
+       {item.text}
       </p>
     </div>
   );
@@ -236,7 +249,6 @@ const Hero = styled.section`
     }
 
     @media screen and (max-width: 768px) {
-
       .service-card {
         width: 100%;
       }

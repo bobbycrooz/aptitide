@@ -12,12 +12,12 @@ const Index = () => {
   return (
     <Hero className=" h-auto  bg-white w-full flex flex-col justify-between items-center  py-2">
       <div className="hero-box space-y-6 w-full   py-6 h-auto">
-        <h1 className="hero-box-auto-type    lg:text-6xl text-5xl font-semibold">
+        <h1 className="hero-box-auto-type text-3xl   lg:text-6xl md:text-5xl font-semibold">
           <Typewriter
             options={{
               strings: [
                 "Consult Healthcare professionals",
-                "Purchase Prescribed Drugs.", 
+                "Purchase Prescribed Drugs.",
                 "All in one App.",
               ],
               autoStart: true,
@@ -68,21 +68,21 @@ const Index = () => {
         </div>
       </div>
       {/**/}
-      <section className="section2   w-full flex flex-col md:flex-row h-auto  justify-center items-start lg:items-center relative ">
+      <section className="section2   w-full flex flex-col md:flex-row h-auto  justify-center items-start lg:items-center relative p-11">
         <img src={imgs.dottedD} alt="" className="hidden xl:block dottedD" />
-      
-          <img src={imgs.phoneA} alt="" className=" w-1/3  phonea mx-16" />
-   
+
+        <img src={imgs.phoneA} alt="" className=" w-1/3  phonea md:mx-16" />
+
         <div className="list-details  w-full text-center  md:text-left">
           <div className="my-14 lg:my-20 card-one w-11/12  p-2 space-y-4 flex flex-col items-center md:block">
             <span className="icon ">
               <Dash />
             </span>
-            <h1 className="font-semibold text-2xl ">
+            <h1 className="font-semibold md:text-2xl text-xl ">
               Thousands of specialists at your disposal
             </h1>
 
-            <p className="font-meddium text-xl">
+            <p className="font-meddium ">
               At Medoncall, we ensure that the best of practitioners attend to
               your request providing the highest quality of medical services for
               a quick and seamless recovery.
@@ -97,11 +97,11 @@ flex flex-col items-center md:block my-14 lg:my-20 card-one  p-2 space-y-4"
             <span className="icon">
               <Bell />
             </span>
-            <h1 className="font-semibold text-2xl ">
+            <h1 className="font-semibold md:text-2xl text-xl">
               Thousands of specialists at your disposal
             </h1>
 
-            <p className=" font-meddium text-xl">
+            <p className=" font-meddium ">
               At Medoncall, we ensure that the best of practitioners attend to
               your request providing the highest quality of medical services for
               a quick and seamless recovery.
@@ -117,11 +117,11 @@ flex flex-col items-center md:block my-14 lg:my-20 card-one  p-2 space-y-4"
               <Map />
             </span>
 
-            <h1 className="font-semibold text-2xl ">
+            <h1 className="font-semibold md:text-2xl text-xl ">
               Thousands of specialists at your disposal
             </h1>
 
-            <p className=" font-meddium text-xl">
+            <p className=" font-meddium ">
               At Medoncall, we ensure that the best of practitioners attend to
               your request providing the highest quality of medical services for
               a quick and seamless recovery.
@@ -136,13 +136,15 @@ flex flex-col items-center md:block my-14 lg:my-20 card-one  p-2 space-y-4"
 const Hero = styled.button`
   margin-top: 140px;
   transition: 0.5s;
+  
+  
 
   .hero-box {
     line-height: 30px;
     /* height: 500px; */
 
     &-content {
-      width: 95%;
+      width: 100%;
     }
 
     &-btn-cont {
@@ -212,7 +214,7 @@ const Hero = styled.button`
     }
     @media screen and (max-width: 1037px) {
       margin-top: 100px;
-      padding: 1.75rem;
+      /* padding: 1.75rem; */
 
       .phonea {
         width: 350px;

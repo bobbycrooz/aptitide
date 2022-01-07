@@ -20,7 +20,7 @@ const Index = () => {
         </div>
       </div>
       <footer className="py-9 w-full h-auto  text-sm text-center md:text-left">
-        <div className="flex md:justify-between  justify-around items-center ">
+        <div className="flex flex-col md:flex-row md:justify-between  justify-around items-center ">
           <div className="logo-box-section text-white md:ml-11">
             {/**/}
             <div className="nav_logo ">
@@ -49,7 +49,7 @@ const Index = () => {
           </div>
           {/**/}
           {/**/}
-          <div className="f-nav  flex  w-1/2 justify-around">
+          <div className="f-nav  flex mt-14 md:mt-0  w-1/2 justify-around">
             <div className="comapany text-white">
               <h1 className="font-bold">COMPANY</h1>
               <ul className="capitalize mt-2">
@@ -81,7 +81,7 @@ const Index = () => {
           </div>
         </div>
         {/*__________________*/}
-        <div className="flex justify-around h-auto md:hidden my-6   ">
+        <div className="flex flex-col md:flex-row justify-around h-auto md:hidden my-6   ">
           <div className="comapany text-white  p-6">
             <h1 className="font-bold">COMPANY</h1>
             <ul className="capitalize mt-2">
@@ -100,20 +100,20 @@ const Index = () => {
           </div>
         </div>
         {/*__________________________________*/}
-        <div className="last-el w-full flex py-4 justify-around text-white mt-11">
+        <div className="last-el w-full flex flex-col md:flex-row py-4 md:justify-around text-white mt-11 items-center">
           <h1 className="hidden md:flex">
             (c)Copy 2021 | All Rights Reserved | Medoncall
           </h1>
 
-          <h1 className='text-xs'>Made with ❤️ by dev_bee Technologies</h1>
+          <h1 className="text-xs">Made with ❤️ by dev_bee Technologies</h1>
 
-          <div className="icon-box flex space-x-8 ">
+          <div className="icon-box flex space-x-8 mt-6 md:mt-0">
             <Fb />
             <Tw />
             <Ig />
           </div>
         </div>
-        <div className="w-full flex justify-center md:hidden text-white text-xs mt-5" >
+        <div className="w-full flex justify-center md:hidden text-white text-xs mt-5">
           <h1 className="">(c)Copy 2021 | All Rights Reserved | Medoncall</h1>
         </div>
       </footer>
