@@ -270,7 +270,6 @@ const Hero = styled.section`
     }
 
     @media screen and (max-width: 1195px) {
-      border: 1px solid #fa3d3d;
       padding: 2.75rem 1rem;
       /* background: red; */
       .phone {
